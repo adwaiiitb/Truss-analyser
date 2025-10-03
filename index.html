@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Truss Designer - Civil Engineering Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <button onclick="startNode()">Add Node</button>
+        <button onclick="startMember()">Add Member</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+        <button onclick="saveTruss()">Save</button>
+        <button onclick="loadTruss()">Load</button>
+        <button onclick="exportImage()">Export Image</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <input type="file" id="fileInput" style="display:none">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    <script src="numeric-1.2.6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
